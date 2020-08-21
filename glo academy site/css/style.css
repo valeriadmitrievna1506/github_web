@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+}
 body {
   margin: 0px;
   background-color: #20202d;
@@ -8,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .container {
+  width: 90%;
   max-width: 945px;
   margin: auto;
 }
@@ -187,11 +191,10 @@ body {
 /* contacts */
 .contacts-form {
   background: #ffffff;
-  height: 500px;
   box-shadow: -5px 5px 0px #ffc41d;
   border-radius: 5px;
   max-width: 380px;
-  padding-top: 92px;
+  padding-top: 42px;
   padding-right: 48px;
   padding-left: 48px;
   padding-bottom: 49px;
@@ -236,6 +239,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.contacts-text {
+  flex-basis: 50%;
+}
 .contacts-data {
   display: flex;
   flex-direction: column;
@@ -268,4 +274,158 @@ body {
   line-height: 18px;
   text-decoration-line: underline;
   color: #a5a5a5;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+  .hero-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    background-size: 100%;
+    background-position: left top;
+  }
+}
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .hero-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .hero-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    background-size: 100%;
+    background-position: left top;
+  }
+  .hero-text {
+    margin-top: 17px;
+    order: 1;
+    text-align: center;
+  }
+  .hero-description {
+    margin: auto;
+  }
+  .hero-button {
+    margin-top: 34px;
+  }
+  .features-item {
+    flex-basis: 45%;
+  }
+  .project-slide {
+    flex-direction: column;
+  }
+  .project-image {
+    margin-bottom: 46px;
+  }
+  .contacts-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contacts-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 42px;
+    margin-top: 58px;
+  }
+}
+@media (max-width: 570px) {
+  .hero {
+    padding-bottom: 75px;
+  }
+  .hero-header {
+    margin-bottom: 38px;
+  }
+  .social-link {
+    margin-left: 10px;
+  }
+  .hero-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .hero-avatar {
+    order: 0;
+    width: 113;
+    height: 113;
+    border-width: 7px;
+    background-size: 100%;
+    background-position: left top;
+  }
+  .hero-description {
+    margin-bottom: 34px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .features-item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .features-text {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .features-title {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .project-title {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .project-time,
+  .project-cost {
+    flex-basis: 100%;
+    margin-bottom: 33px;
+  }
+  .project-paragraph {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .contacts-form {
+    padding: 40px 19px;
+  }
+  .form-title {
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .form-button {
+    font-size: 10px;
+    line-height: 28px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+  .contacts-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .contacts-link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .contacts-phone, .contacts-mail {
+    margin-bottom: 33px;
+  }
 }
