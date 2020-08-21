@@ -26,6 +26,8 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
+
+/* header */
 .hero {
   padding-top: 50px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
@@ -176,6 +178,7 @@ body {
 }
 .project-bullet {
   display: inline-block;
+  cursor: pointer;
   width: 10px;
   height: 10px;
   border: 2px solid #ffbb01;
